@@ -13,9 +13,5 @@ class CountStore extends BaseStore {
     }
 }
 
-// Make sure the CountStore’s unique name
-// AND getCounterStore, counterStore must be same formula
-// Example: getUserStore => userStore
-// Example: getProductStore => productStore
 export default CountStore;
 export const CounterStore = getOrCreateStore('counterStore', CountStore);
