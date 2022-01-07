@@ -1,7 +1,6 @@
 import React from 'react';
 import { AppContext } from 'next/dist/pages/_app';
-import { NextComponentType, NextPage, NextPageContext } from 'next';
-import ErrorPage from 'next/error';
+import { NextPage } from 'next';
 import { withMobx } from 'next-mobx-wrapper';
 import { configure } from 'mobx';
 import { Provider, useStaticRendering } from 'mobx-react';
