@@ -3,7 +3,7 @@ mobx, mobx-react, next-mobx-wrapper & React, Next & Typescript ⚙️
 
 ### Install
 ```bash 
-$ https://github.com/jsh0128/next-mobx-typescript.git
+$ git clone https://github.com/jsh0128/next-mobx-typescript.git
 ```
 
 ## MobX 최신 버전 지원 안됨
