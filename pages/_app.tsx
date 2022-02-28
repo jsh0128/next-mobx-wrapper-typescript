@@ -1,14 +1,18 @@
 import React from 'react';
 import { AppContext } from 'next/dist/pages/_app';
-import { NextPage } from 'next';
+import { NextPage, NextPageContext } from 'next';
 import { withMobx } from 'next-mobx-wrapper';
 import { configure } from 'mobx';
 import { Provider, useStaticRendering } from 'mobx-react';
 import * as stores from 'stores';
 import StoreType from 'util/type/StoreType';
 
+interface CustomCtxType extends NextPageContext {
+    store: StoreType;
+}
+
 interface AppContextStore extends AppContext {
-    store?: StoreType;
+    ctx: CustomCtxType;
 }
 
 interface MyAppProps {
